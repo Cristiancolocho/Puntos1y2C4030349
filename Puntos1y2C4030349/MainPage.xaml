@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Puntos1y2C4030349.View"
+             x:Class="Puntos1y2C4030349.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:PuntosViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="dato 1 :" />
+            <Entry Text="{Binding A1, Mode=TwoWay}" Keyboard="Numeric" Placeholder="Escriba dato 1"/>
+            <Label Text="dato 1 :" />
+            <Entry Text="{Binding B1, Mode=TwoWay}" Keyboard="Numeric" Placeholder="Escriba dato 2"/>
+
+            <Label Text="dato 2 :" />
+            <Entry Text="{Binding A2, Mode=TwoWay}" Keyboard="Numeric" Placeholder="Escriba dato 3"/>
+            <Label Text="dato 2 :" />
+            <Entry Text="{Binding B2, Mode=TwoWay}" Keyboard="Numeric" Placeholder="Escriba dato 4"/>
+
+
+            <Label Text="Distancia:" />
+            <Label Text="{Binding Distancia, StringFormat='{0:F2}'}" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
